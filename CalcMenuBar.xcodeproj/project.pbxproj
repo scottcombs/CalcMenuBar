@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7604D04F21950AD400A8797A /* Workflow.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7604D04E21950AD400A8797A /* Workflow.rtf */; };
+		761A573621935ABF00F7EE04 /* NSColor+NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A573521935ABF00F7EE04 /* NSColor+NSColorExtensions.swift */; };
+		761A573921936D5D00F7EE04 /* CalcMenuBarIcon.afphoto in Resources */ = {isa = PBXBuildFile; fileRef = 761A573721936D1300F7EE04 /* CalcMenuBarIcon.afphoto */; };
+		7640143121938D99005005AC /* ResultsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7640143021938D99005005AC /* ResultsTextField.swift */; };
+		76401433219395AA005005AC /* NSString+NSStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76401432219395AA005005AC /* NSString+NSStringExtensions.swift */; };
+		767F3B3C2192829C0043FD8E /* CalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F3B3B2192829C0043FD8E /* CalcView.swift */; };
+		767F3B452192C35E0043FD8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 767F3B442192C35E0043FD8E /* AppDelegate.m */; };
+		767F3B4A2192C35F0043FD8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767F3B492192C35F0043FD8E /* Assets.xcassets */; };
+		767F3B4D2192C35F0043FD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767F3B4B2192C35F0043FD8E /* Main.storyboard */; };
+		767F3B502192C35F0043FD8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 767F3B4F2192C35F0043FD8E /* main.m */; };
+		767F3B562192C5460043FD8E /* CalcMenuBarLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 767F3B412192C35E0043FD8E /* CalcMenuBarLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		769DBBDE21963ADE00DC0A45 /* String+StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769DBBDD21963ADE00DC0A45 /* String+StringExtensions.swift */; };
+		76A2CBE421932E610088A0A3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2CBE321932E610088A0A3 /* ServiceManagement.framework */; };
+		76A3F66A21924AA000E83948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A3F66921924AA000E83948 /* AppDelegate.swift */; };
+		76A3F66E21924AA100E83948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A3F66D21924AA100E83948 /* Assets.xcassets */; };
+		76A3F67121924AA100E83948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A3F66F21924AA100E83948 /* Main.storyboard */; };
+		76A3F67A21924AC900E83948 /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A3F67921924AC900E83948 /* CalcViewController.swift */; };
+		76A3F67C21924ADA00E83948 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A3F67B21924ADA00E83948 /* EventMonitor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		767F3B552192C5120043FD8E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				767F3B562192C5460043FD8E /* CalcMenuBarLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7604D04E21950AD400A8797A /* Workflow.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Workflow.rtf; sourceTree = "<group>"; };
+		761A573521935ABF00F7EE04 /* NSColor+NSColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+NSColorExtensions.swift"; sourceTree = "<group>"; };
+		761A573721936D1300F7EE04 /* CalcMenuBarIcon.afphoto */ = {isa = PBXFileReference; lastKnownFileType = file; path = CalcMenuBarIcon.afphoto; sourceTree = "<group>"; };
+		7640143021938D99005005AC /* ResultsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTextField.swift; sourceTree = "<group>"; };
+		76401432219395AA005005AC /* NSString+NSStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+NSStringExtensions.swift"; sourceTree = "<group>"; };
+		767F3B3B2192829C0043FD8E /* CalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcView.swift; sourceTree = "<group>"; };
+		767F3B412192C35E0043FD8E /* CalcMenuBarLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcMenuBarLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		767F3B432192C35E0043FD8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		767F3B442192C35E0043FD8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		767F3B492192C35F0043FD8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		767F3B4C2192C35F0043FD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		767F3B4E2192C35F0043FD8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767F3B4F2192C35F0043FD8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		767F3B512192C35F0043FD8E /* CalcMenuBarLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalcMenuBarLauncher.entitlements; sourceTree = "<group>"; };
+		769DBBDD21963ADE00DC0A45 /* String+StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+StringExtensions.swift"; sourceTree = "<group>"; };
+		76A2CBE321932E610088A0A3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		76A3F66621924AA000E83948 /* CalcMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A3F66921924AA000E83948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76A3F66D21924AA100E83948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76A3F67021924AA100E83948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76A3F67221924AA100E83948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A3F67321924AA100E83948 /* CalcMenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalcMenuBar.entitlements; sourceTree = "<group>"; };
+		76A3F67921924AC900E83948 /* CalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
+		76A3F67B21924ADA00E83948 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		767F3B3E2192C35E0043FD8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A3F66321924AA000E83948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2CBE421932E610088A0A3 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		761A573821936D2F00F7EE04 /* DesignFiles */ = {
+			isa = PBXGroup;
+			children = (
+				761A573721936D1300F7EE04 /* CalcMenuBarIcon.afphoto */,
+			);
+			path = DesignFiles;
+			sourceTree = "<group>";
+		};
+		764014342193AA03005005AC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7640143021938D99005005AC /* ResultsTextField.swift */,
+				76401432219395AA005005AC /* NSString+NSStringExtensions.swift */,
+				761A573521935ABF00F7EE04 /* NSColor+NSColorExtensions.swift */,
+				76A3F67B21924ADA00E83948 /* EventMonitor.swift */,
+				769DBBDD21963ADE00DC0A45 /* String+StringExtensions.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		764014352193AA14005005AC /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76A3F66F21924AA100E83948 /* Main.storyboard */,
+				76A3F67921924AC900E83948 /* CalcViewController.swift */,
+				767F3B3B2192829C0043FD8E /* CalcView.swift */,
+			);
+			path = "Main View Controller";
+			sourceTree = "<group>";
+		};
+		764014362193AA31005005AC /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				76A3F66921924AA000E83948 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		767F3B422192C35E0043FD8E /* CalcMenuBarLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				767F3B432192C35E0043FD8E /* AppDelegate.h */,
+				767F3B442192C35E0043FD8E /* AppDelegate.m */,
+				767F3B492192C35F0043FD8E /* Assets.xcassets */,
+				767F3B4B2192C35F0043FD8E /* Main.storyboard */,
+				767F3B4E2192C35F0043FD8E /* Info.plist */,
+				767F3B4F2192C35F0043FD8E /* main.m */,
+				767F3B512192C35F0043FD8E /* CalcMenuBarLauncher.entitlements */,
+			);
+			path = CalcMenuBarLauncher;
+			sourceTree = "<group>";
+		};
+		76A2CBE221932E610088A0A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76A2CBE321932E610088A0A3 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76A3F65D21924AA000E83948 = {
+			isa = PBXGroup;
+			children = (
+				76A3F66821924AA000E83948 /* CalcMenuBar */,
+				767F3B422192C35E0043FD8E /* CalcMenuBarLauncher */,
+				76A2CBE221932E610088A0A3 /* Frameworks */,
+				76A3F66721924AA000E83948 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76A3F66721924AA000E83948 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76A3F66621924AA000E83948 /* CalcMenuBar.app */,
+				767F3B412192C35E0043FD8E /* CalcMenuBarLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76A3F66821924AA000E83948 /* CalcMenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				764014362193AA31005005AC /* App Delegate */,
+				764014342193AA03005005AC /* Classes */,
+				761A573821936D2F00F7EE04 /* DesignFiles */,
+				76A3F66D21924AA100E83948 /* Assets.xcassets */,
+				764014352193AA14005005AC /* Main View Controller */,
+				76A3F67221924AA100E83948 /* Info.plist */,
+				76A3F67321924AA100E83948 /* CalcMenuBar.entitlements */,
+				7604D04E21950AD400A8797A /* Workflow.rtf */,
+			);
+			path = CalcMenuBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		767F3B402192C35E0043FD8E /* CalcMenuBarLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767F3B522192C35F0043FD8E /* Build configuration list for PBXNativeTarget "CalcMenuBarLauncher" */;
+			buildPhases = (
+				767F3B3D2192C35E0043FD8E /* Sources */,
+				767F3B3E2192C35E0043FD8E /* Frameworks */,
+				767F3B3F2192C35E0043FD8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalcMenuBarLauncher;
+			productName = CalcMenuBarLauncher;
+			productReference = 767F3B412192C35E0043FD8E /* CalcMenuBarLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76A3F66521924AA000E83948 /* CalcMenuBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A3F67621924AA100E83948 /* Build configuration list for PBXNativeTarget "CalcMenuBar" */;
+			buildPhases = (
+				76A3F66221924AA000E83948 /* Sources */,
+				76A3F66321924AA000E83948 /* Frameworks */,
+				76A3F66421924AA000E83948 /* Resources */,
+				767F3B552192C5120043FD8E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalcMenuBar;
+			productName = CalcMenuBar;
+			productReference = 76A3F66621924AA000E83948 /* CalcMenuBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76A3F65E21924AA000E83948 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Nutz & Boltz Productions";
+				TargetAttributes = {
+					767F3B402192C35E0043FD8E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					76A3F66521924AA000E83948 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 76A3F66121924AA000E83948 /* Build configuration list for PBXProject "CalcMenuBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76A3F65D21924AA000E83948;
+			productRefGroup = 76A3F66721924AA000E83948 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76A3F66521924AA000E83948 /* CalcMenuBar */,
+				767F3B402192C35E0043FD8E /* CalcMenuBarLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		767F3B3F2192C35E0043FD8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767F3B4A2192C35F0043FD8E /* Assets.xcassets in Resources */,
+				767F3B4D2192C35F0043FD8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A3F66421924AA000E83948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761A573921936D5D00F7EE04 /* CalcMenuBarIcon.afphoto in Resources */,
+				7604D04F21950AD400A8797A /* Workflow.rtf in Resources */,
+				76A3F66E21924AA100E83948 /* Assets.xcassets in Resources */,
+				76A3F67121924AA100E83948 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		767F3B3D2192C35E0043FD8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767F3B502192C35F0043FD8E /* main.m in Sources */,
+				767F3B452192C35E0043FD8E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A3F66221924AA000E83948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A3F67A21924AC900E83948 /* CalcViewController.swift in Sources */,
+				769DBBDE21963ADE00DC0A45 /* String+StringExtensions.swift in Sources */,
+				7640143121938D99005005AC /* ResultsTextField.swift in Sources */,
+				761A573621935ABF00F7EE04 /* NSColor+NSColorExtensions.swift in Sources */,
+				76A3F66A21924AA000E83948 /* AppDelegate.swift in Sources */,
+				76A3F67C21924ADA00E83948 /* EventMonitor.swift in Sources */,
+				76401433219395AA005005AC /* NSString+NSStringExtensions.swift in Sources */,
+				767F3B3C2192829C0043FD8E /* CalcView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		767F3B4B2192C35F0043FD8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767F3B4C2192C35F0043FD8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76A3F66F21924AA100E83948 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A3F67021924AA100E83948 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		767F3B532192C35F0043FD8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalcMenuBarLauncher/CalcMenuBarLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27LZ3U2T22;
+				INFOPLIST_FILE = CalcMenuBarLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nutznboltzllc.com.CalcMenuBarLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		767F3B542192C35F0043FD8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalcMenuBarLauncher/CalcMenuBarLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27LZ3U2T22;
+				INFOPLIST_FILE = CalcMenuBarLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nutznboltzllc.com.CalcMenuBarLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		76A3F67421924AA100E83948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76A3F67521924AA100E83948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		76A3F67721924AA100E83948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalcMenuBar/CalcMenuBar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27LZ3U2T22;
+				INFOPLIST_FILE = CalcMenuBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nutznboltzllc.com.CalcMenuBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		76A3F67821924AA100E83948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalcMenuBar/CalcMenuBar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27LZ3U2T22;
+				INFOPLIST_FILE = CalcMenuBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nutznboltzllc.com.CalcMenuBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		767F3B522192C35F0043FD8E /* Build configuration list for PBXNativeTarget "CalcMenuBarLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767F3B532192C35F0043FD8E /* Debug */,
+				767F3B542192C35F0043FD8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A3F66121924AA000E83948 /* Build configuration list for PBXProject "CalcMenuBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A3F67421924AA100E83948 /* Debug */,
+				76A3F67521924AA100E83948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A3F67621924AA100E83948 /* Build configuration list for PBXNativeTarget "CalcMenuBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A3F67721924AA100E83948 /* Debug */,
+				76A3F67821924AA100E83948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76A3F65E21924AA000E83948 /* Project object */;
+}
