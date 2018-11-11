@@ -283,15 +283,6 @@ extension CalcViewController {
 			}
 		}
 	}
-
-	@IBAction func myCopy(_ sender: Any?) {
-		print("Got here copy")
-	}
-
-	@IBAction func myPaste(_ sender: Any?) {
-		print("Got here paste")
-	}
-
 }
 
 extension CalcViewController {
