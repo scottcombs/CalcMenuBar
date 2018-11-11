@@ -164,10 +164,8 @@ class CalcViewController: NSViewController {
 			case 200...203:
 				buffers.opr = sender.tag
 				buffers.leftTerm = buffers.queue
+				buffers.rightTerm = ""
 				buffers.queue = ""
-				if !buffers.rightTerm.isEmpty{
-					performMathFunction()
-				}
 			case 205: // Percent
 				let leftTerm : Float = buffers.queue.floatNumber()
 				let result = leftTerm * 0.01
@@ -185,16 +183,18 @@ class CalcViewController: NSViewController {
 				}
 			default:
 				// Handle math
-				if buffers.rightTerm.isEmpty {
-					buffers.rightTerm = buffers.queue
-				}
 				performMathFunction()
 		}
 	}
 
 	func performMathFunction() -> Void {
 		let leftTerm : Float = buffers.leftTerm.floatNumber()
-		let rightTerm : Float = buffers.rightTerm.floatNumber()
+		var rightTerm : Float = 0
+		if buffers.rightTerm == ""{
+			rightTerm = buffers.queue.floatNumber()
+		}else{
+			rightTerm = buffers.rightTerm.floatNumber()
+		}
 		var result : Float = 0
 		switch buffers.opr{
 		case 203: // Add
