@@ -53,12 +53,18 @@ class CalcView: NSView {
 		switch event.keyCode {
 
 		/* NUMBERS */
-		case 29: // 0
+        case 29: // 0
+            button.tag = 0
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
+        case 82: // Numpad 0
 			button.tag = 0
 			NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 		case 25: // 9
 			button.tag = 9
 			NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
+        case 92: // Numpad 9
+            button.tag = 9
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 		case 28: // 8 | Multiply
 			if event.modifierFlags.contains(.shift){
 				button.tag = 201
@@ -67,12 +73,24 @@ class CalcView: NSView {
 				button.tag = 8
 				NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 			}
+        case 67: // Numpad Multiply
+            button.tag = 201
+            NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
+        case 91: // Numpad 8
+            button.tag = 8
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 		case 26: // 7
 			button.tag = 7
 			NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
+        case 89: // Numpad 7
+            button.tag = 7
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 		case 22: // 6
 			button.tag = 6
 			NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
+        case 88: // Numpad 6
+            button.tag = 6
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 		case 23: // 5
 			if event.modifierFlags.contains(.shift){
 				button.tag = 205
@@ -81,19 +99,34 @@ class CalcView: NSView {
 				button.tag = 5
 				NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 			}
+        case 87: // Numpad 5
+            button.tag = 5
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 		case 21: // 4
 			button.tag = 4
 			NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
+        case 86: // Numpad 4
+            button.tag = 4
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 		case 20: // 3
 			button.tag = 3
 			NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
+        case 85: // Numpad 3
+            button.tag = 3
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 		case 19: // 2
 			button.tag = 2
 			NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
+        case 84: // Numpad 2
+            button.tag = 2
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
 		case 18: // 1
 			button.tag = 1
 			NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
-
+        case 83: // Numpad 1
+            button.tag = 1
+            NSApp.sendAction(Selector(("numKeyClicked:")), to: nil, from: button)
+            
 		/* OPERATORS */
 		case 27: // Minus or Plus Minus
 			if event.modifierFlags.contains(.option) {
@@ -104,6 +137,9 @@ class CalcView: NSView {
 				button.tag = 202
 				NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
 			}
+        case 78: // Numpad Minus
+            button.tag = 202
+            NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
 		case 24: // Equal or Plus/Minus or Plus
 			if event.modifierFlags.contains(.shift){
 				// Plus
@@ -118,12 +154,21 @@ class CalcView: NSView {
 				button.tag = 300
 				NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
 			}
+        case 69: // Numpad Plus
+            button.tag = 203
+            NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
 		case 44: // Divide
 			button.tag = 200
 			NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
+        case 75: // Numpad Divide
+            button.tag = 200
+            NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
 		case 47: // Period
 			button.tag = 100
 			NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
+        case 65: // Numpad Period
+            button.tag = 100
+            NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
 		case 51: // Delete
 			if event.modifierFlags.contains(.option) {
 				// All Clear
@@ -133,10 +178,13 @@ class CalcView: NSView {
 				button.tag = 400
 				NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
 			}
+        case 71: // Numpad Clear
+            button.tag = 207
+            NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
 		case 36: // Enter
 			button.tag = 300
 			NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
-		case 76: // Return
+		case 76: // Return & Numpad Enter
 			button.tag = 300
 			NSApp.sendAction(Selector(("opKeyClicked:")), to: nil, from: button)
 
